@@ -1,0 +1,6 @@
+{
+  "name": "Sirf Coffee — Human-Led Matchmaking",
+  "description": "Bespoke human-led matchmaking service for accomplished, progressive Indians around the world.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-typewriter: "Courier Prime", monospace;
+  --font-editorial: "Newsreader", Georgia, serif;
+  --font-display: "Cormorant Garamond", "Newsreader", serif;
+  
+  --color-ivory: #F8F5F0;
+  --color-ivory-light: #FCFAF6;
+  --color-cream-card: #F2ECE0;
+  --color-cream-border: #DCD3C3;
+  --color-ink: #1C1917;
+  --color-ink-soft: #44403C;
+  --color-ink-muted: #78716C;
+  --color-burgundy: #72272B;
+}
+
+/* Custom editorial typography utility classes */
+.font-typewriter {
+  font-family: 'Courier Prime', Courier, monospace;
+}
+
+.font-editorial {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', 'Newsreader', Georgia, serif;
+}
+
+/* Subtle typewriter blinking caret */
+@keyframes typewriterBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter-caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.05em;
+  background-color: currentColor;
+  margin-left: 2px;
+  vertical-align: -0.1em;
+  animation: typewriterBlink 1.1s infinite step-start;
+}
+
+/* Subtle analog film grain background */
+.film-grain {
+  background-image: radial-gradient(rgba(30, 27, 24, 0.04) 1px, transparent 0);
+  background-size: 4px 4px;
+}
+
+/* Smooth understated scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCD3C3;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8AC98;
+}
